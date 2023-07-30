@@ -8,7 +8,7 @@ import { generateRobotsTxt } from '@/lib/robots.txt'
 // index.js
 
 import React, { useEffect } from 'react';
-import { initializeChatWidget } from 'path/to/initializeChatWidget'; // 替换为正确的导入路径
+import { initializeChatWidget } from '@/pages/chat.js'; // 替换为正确的导入路径
 // 其他导入语句...
 
 // 原来的代码...
