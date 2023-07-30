@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 
 const ChatPage = () => {
   useEffect(() => {
-    var chatConfig = {
+    const chatConfig = {
       token: 'oIrehxj3FK7hUFc0eU4X',
     };
     initializeChatWidget(chatConfig);
