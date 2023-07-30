@@ -16,14 +16,6 @@ import { generateRobotsTxt } from '@/lib/robots.txt'
 const Index = props => {
   const { theme } = useGlobal()
   const ThemeComponents = ThemeMap[theme]
-    
-  useEffect(() => {
-    const chatConfig = {
-      token: 'oIrehxj3FK7hUFc0eU4X',
-    };
-    initializeChatWidget(chatConfig);
-  }, []);
-  
   return <ThemeComponents.LayoutIndex {...props} />
 
 }
