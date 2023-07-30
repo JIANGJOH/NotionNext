@@ -5,6 +5,15 @@ import * as ThemeMap from '@/themes'
 import { useGlobal } from '@/lib/global'
 import { generateRss } from '@/lib/rss'
 import { generateRobotsTxt } from '@/lib/robots.txt'
+// index.js
+
+import React, { useEffect } from 'react';
+import { initializeChatWidget } from 'path/to/initializeChatWidget'; // 替换为正确的导入路径
+// 其他导入语句...
+
+// 原来的代码...
+
+
 
 /**
  * 首页布局
@@ -14,7 +23,16 @@ import { generateRobotsTxt } from '@/lib/robots.txt'
 const Index = props => {
   const { theme } = useGlobal()
   const ThemeComponents = ThemeMap[theme]
+    
+  useEffect(() => {
+    const chatConfig = {
+      token: 'oIrehxj3FK7hUFc0eU4X',
+    };
+    initializeChatWidget(chatConfig);
+  }, []);
+  
   return <ThemeComponents.LayoutIndex {...props} />
+
 }
 
 /**
