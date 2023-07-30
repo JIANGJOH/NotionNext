@@ -7,7 +7,6 @@ import { generateRss } from '@/lib/rss'
 import { generateRobotsTxt } from '@/lib/robots.txt'
 // index.js
 
-
 /**
  * 首页布局
  * @param {*} props
@@ -17,7 +16,6 @@ const Index = props => {
   const { theme } = useGlobal()
   const ThemeComponents = ThemeMap[theme]
   return <ThemeComponents.LayoutIndex {...props} />
-
 }
 
 /**
