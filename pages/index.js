@@ -7,9 +7,6 @@ import { generateRss } from '@/lib/rss'
 import { generateRobotsTxt } from '@/lib/robots.txt'
 // index.js
 
-import React, { useEffect } from 'react';
-
-
 
 /**
  * 首页布局
